@@ -48,12 +48,12 @@
 // |      |  F1 |  F2 |  F3 |  F4 |     |   |     |  V- | Mut |  V+ |     |      |
 // |      |  F5 |  F6 |  F7 |  F8 |     |   |     | Pre | PP  | Nex |     |      |
 // |      |  F9 | F10 | F11 | F12 |     |   |     |     |     |     |     |      |
-//                    |     |     |     |   |     | XXX |     |
+//                    |     | bt  |     |   |     | XXX |     |
                         bindings = <
    &none &kp F1  &kp F2  &kp F3  &kp F4  &none    &none  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none  &none
    &none &kp F5  &kp F6  &kp F7  &kp F8  &none    &none  &kp C_PREV    &kp C_PP    &kp C_NEXT    &none  &none
    &none &kp F9  &kp F10 &kp F11 &kp F12 &none    &none  &none         &none       &none         &none  &none
-                         &none   &none   &none    &none  &trans        &none 
+                         &none   &to 4   &none    &none  &trans        &none 
                         >;
                 };
 
@@ -71,6 +71,19 @@
                         >;
                 };
 
+                bt_layer {
+// -----------------------------------------------------------------------------------------
+// |      |     |     |     |     |     |   |     |     |     |     |      |      |
+// |      | BT1 | BT2 | BT3 | BT4 |     |   |     |     |     |     |      |      |
+// |      | DC1 | DC2 | DC3 | DC4 |     |   |     |     | CLR |     | CLRA |      |
+//                    |     |     |     |   |     | L0  |     |
+                        bindings = <
+   &none &none           &none          &none          &none            &none     &none  &none  &none        &none   &none            &none
+   &none &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3     &none     &none  &none  &none        &none   &none            &none
+   &none &bt BT_DISC 0   &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3    &none     &none  &none  &bt BT_CLR   &none   &bt BT_CLR_ALL   &none
+                                        &none          &none            &none     &none  &to 0  &none 
+                        >;
+                };
 
                 querty {
 // -----------------------------------------------------------------------------------------
