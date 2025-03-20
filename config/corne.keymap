@@ -23,7 +23,7 @@
                         bindings = <
    &kp ESC  &kp B &kp L &kp D &kp W &kp Z   &kp SQT &kp F  &kp O     &kp U   &kp J    &kp RET
    &kp TAB  &kp N &kp R &kp T &kp S &kp G   &kp Y   &kp H  &kp A     &kp E   &kp I    &kp BSPC
-   &kp LGUI &kp Q &kp X &kp M &kp C &kp V   &kp K   &kp P  &kp COMMA &kp DOT &kp FSLH &kp ALT
+   &kp LGUI &kp Q &kp X &kp M &kp C &kp V   &kp K   &kp P  &kp COMMA &kp DOT &kp FSLH &kp LALT
                 &kp LCTRL &mo 1 &kp SPACE   &kp RSHIFT &mo 2 &key_repeat
                         >;
                 };
@@ -63,8 +63,8 @@
 // |      | CZ  |  CX  | CC  | CV  | Mod |   |      | <S  |  Sv  |  S^ |  S>  |      |
 //                    | MB4 | WIN | LCLK |   | RCLK | L0 | MB5 |
                         bindings = <
-   &none  &none      &kp HOME    &kp UP      &kp END     &none      &kp SHFT    &kp ALT         &kp LS(TAB)     &kp TAB        &kp LCTRL        &none
-   &none  &none      &kp LEFT    &kp DOWN    &kp RIGHT   &none      &kp LGUI     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &none
+   &none  &none      &kp HOME    &kp UP      &kp END     &none      &kp LSHFT   &kp LALT        &kp LS(TAB)     &kp TAB        &kp LCTRL        &none
+   &none  &none      &kp LEFT    &kp DOWN    &kp RIGHT   &none      &kp LGUI    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &none
    &none  &kp LC(Z)  &kp LC(X)   &kp LC(C)   &kp LC(V)   &none      &none       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP   &msc SCRL_RIGHT  &none
                                  &mkp MB4    &mkp MCLK   &mkp LCLK  &mkp RCLK   &to 0           &mkp MB5
                         >;
