@@ -35,10 +35,10 @@
 // |     |  -  |  <  |  ^  |  >  |     |   |     |  [  |  _  |  ]  |  \  |  Ö  |
 //                   |     | XXX |     |   | SHIFT | nav |     |
                         bindings = <
-   &none  &kp GRAVE  &kp LPAR  &kp DLLR  &kp RPAR  &kp PLUS    &kp STAR    &kp LBRC  &kp AT    &kp RBRC  &kp PIPE &none
-   &none  &kp 1      &kp 2     &kp 3     &kp 4     &kp 5       &kp 6       &kp 7     &kp 8     &kp 9     &kp 0    &none
-   &none  &kp MINUS  &kp LT    &CARET    &kp GT    &none       &none       &kp LBKT  &kp UNDER &kp RBKT  &kp BSLH &none
-                               &none     &trans    &none       &kp RSHIFT  &to 3     &none
+   &none  &kp GRAVE  &kp LPAR  &kp DLLR    &kp RPAR  &kp PLUS    &kp STAR    &kp LBRC  &kp AT    &kp RBRC  &kp PIPE &none
+   &none  &kp 1      &kp 2     &kp 3       &kp 4     &kp 5       &kp 6       &kp 7     &kp 8     &kp 9     &kp 0    &none
+   &none  &kp MINUS  &kp LT    &kp CARET   &kp GT    &none       &none       &kp LBKT  &kp UNDER &kp RBKT  &kp BSLH &none
+                               &none       &trans    &none       &kp RSHIFT  &to 3     &none
                         >;
                 };
 
