@@ -11,12 +11,12 @@
 #include <input/processors.dtsi>
 #include "keys_sv.h"
 
-&cursor_listener {
-        turbo {
-                layers = <4> 
-                input-processors = <&zip_xy_scaler 3 1 >;
-        }
-}
+&mmv_input_listener {
+        warp {
+                layers = <4>; 
+                input-processors = <&zip_xy_scaler 3 1>;
+        };
+};
 
 / {
         keymap {
